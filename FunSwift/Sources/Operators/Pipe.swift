@@ -11,6 +11,7 @@ precedencegroup ForwardApplication {
     associativity: left
 }
 
+/// Pipe-forward operator for function application.
 infix operator |>: ForwardApplication
 
 public func |> <A, B>(value: A, transform: (A) -> B) -> B {
