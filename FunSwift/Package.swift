@@ -6,10 +6,27 @@ import PackageDescription
 let package = Package(
     name: "FunSwift",
     products: [
-        .library(name: "FunSwift", targets: ["Operators"])
+        .library(
+            name: "FunSwift",
+            targets: [
+                "Operators",
+                "Functions"
+            ]
+        )
     ],
     targets: [
         .target(name: "Operators"),
-        .testTarget(name: "OperatorsTests", dependencies: ["Operators"])
+        .target(name: "Functions"),
+        .target(name: "TestHelpers", path: "Tests/Helpers"),
+        .testTarget(name: "OperatorsTests", dependencies: ["Operators", "TestHelpers"]),
+        .testTarget(name: "FunctionsTests", dependencies: ["Functions", "TestHelpers"]),
+        .testTarget(
+            name: "IntegrationTests",
+            dependencies: [
+                "Operators",
+                "Functions",
+                "TestHelpers"
+            ]
+        )
     ]
 )

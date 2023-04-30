@@ -5,8 +5,9 @@
 //  Created by Mikhail Dudarev on 29.04.2023.
 //
 
+import Operators
+@testable import TestHelpers
 import XCTest
-@testable import Operators
 
 final class PipeTests: XCTestCase {
     func test() throws {
