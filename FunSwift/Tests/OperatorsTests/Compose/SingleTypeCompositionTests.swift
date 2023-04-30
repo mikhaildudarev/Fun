@@ -5,9 +5,9 @@
 //  Created by Mikhail Dudarev on 30.04.2023.
 //
 
-import XCTest
 import Operators
 @testable import TestHelpers
+import XCTest
 
 final class SingleTypeCompositionTests: XCTestCase {
     func test() throws {

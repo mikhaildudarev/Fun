@@ -5,9 +5,9 @@
 //  Created by Mikhail Dudarev on 29.04.2023.
 //
 
-import XCTest
 import Functions
 @testable import TestHelpers
+import XCTest
 
 final class CurryTests: XCTestCase {
     func test() throws {

@@ -5,9 +5,9 @@
 //  Created by Mikhail Dudarev on 29.04.2023.
 //
 
-import XCTest
 import Operators
 @testable import TestHelpers
+import XCTest
 
 final class ForwardCompositionTests: XCTestCase {
     func test() throws {
