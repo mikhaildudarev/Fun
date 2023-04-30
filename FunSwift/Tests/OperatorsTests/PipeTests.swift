@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import Operators
+@testable import TestHelpers
 
 final class PipeTests: XCTestCase {
     func test() throws {
