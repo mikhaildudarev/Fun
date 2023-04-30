@@ -14,3 +14,7 @@ func increment(_ value: Int) -> Int {
 func square(_ value: Int) -> Int {
     value * value
 }
+
+func isEven(_ value: Int) -> Bool {
+    value % 2 == .zero
+}

@@ -1,5 +1,5 @@
 //
-//  Compose.swift
+//  ForwardComposition.swift
 //  Operators
 //
 //  Created by Mikhail Dudarev on 29.04.2023.
@@ -18,7 +18,7 @@ infix operator >>>: ForwardComposition
 public func >>> <A, B, C>(
     f: @escaping (A) -> B,
     g: @escaping (B) -> C
-) -> ((A) -> C) {
+) -> (A) -> C {
     { value in g(f(value)) }
 }
 
