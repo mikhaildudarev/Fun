@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Functions
+import Functions
 @testable import TestHelpers
 
 final class FunctionsTests: XCTestCase {

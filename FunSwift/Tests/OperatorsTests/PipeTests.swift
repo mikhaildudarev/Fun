@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Operators
+import Operators
 @testable import TestHelpers
 
 final class PipeTests: XCTestCase {
