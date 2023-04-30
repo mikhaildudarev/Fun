@@ -6,10 +6,10 @@ import PackageDescription
 let package = Package(
     name: "FunSwift",
     products: [
-        .library(name: "FunSwift", targets: ["FunSwift"])
+        .library(name: "FunSwift", targets: ["Operators"])
     ],
     targets: [
-        .target(name: "FunSwift"),
-        .testTarget(name: "FunSwiftTests", dependencies: ["FunSwift"])
+        .target(name: "Operators"),
+        .testTarget(name: "OperatorsTests", dependencies: ["Operators"])
     ]
 )
