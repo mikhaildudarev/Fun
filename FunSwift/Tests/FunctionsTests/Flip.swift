@@ -14,5 +14,8 @@ final class FlipTests: XCTestCase {
         let uppercasedWithLocale = flip(String.uppercased(with:))
         let uppercasedWithEn = uppercasedWithLocale(Locale(identifier: "en"))
         XCTAssertEqual(uppercasedWithEn("Hello"), "HELLO")
+
+        let uppercased = flip(String.uppercased)()
+        XCTAssertEqual(uppercased("Hello"), "HELLO")
     }
 }
