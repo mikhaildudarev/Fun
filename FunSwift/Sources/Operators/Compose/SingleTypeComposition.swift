@@ -15,7 +15,7 @@ precedencegroup SingleTypeComposition {
 /// Single-type composition
 infix operator <>: SingleTypeComposition
 
-func <> <A>(
+public func <> <A>(
     f: @escaping (A) -> A,
     g: @escaping (A) -> A
 ) -> (A) -> A {
