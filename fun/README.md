@@ -1,4 +1,4 @@
-# FunSwift
+# fun (Functional Swift)
 
 Experimental package to explore functional programming in Swift.
 
