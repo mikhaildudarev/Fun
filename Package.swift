@@ -4,10 +4,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "fun",
+    name: "Fun",
     products: [
         .library(
-            name: "fun",
+            name: "Fun",
             targets: [
                 "Operators",
                 "Functions"
