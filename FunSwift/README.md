@@ -2,7 +2,7 @@
 
 Experimental package to explore functional programming in Swift.
 
-Inspired by PointFree, objc.io and other bright minds out there.
+Inspired by [PointFree](https://www.pointfree.co), [objc.io](https://www.objc.io) and other bright minds out there.
 
 ## Operators
 
@@ -50,7 +50,11 @@ func incrementAndSquare(_ value: Int) -> (Int) -> Int { increment <> square }
 
 `curry` is a higher-order function, that takes a function with several arguments and transforms it into a chain of single-argument functions.
 
-`flip` is a higher-order function, that takes a chain consisting of several single-argument functions and transforms it into a chain of same-signature functions, but flipped order (except for the final result). It is often used in conjuction with `curry` to create more general functions and avoid code repetition at the caller site.
+_NOTE: Current implementation of `curry` supports exactly two arguments, but overloads to handle more might be added later (if needed)._
+
+`flip` is a higher-order function, that takes a chain consisting of several single-argument functions and transforms it into a chain of same-signature functions, but with flipped order (except for the final result). It is often used in conjuction with `curry` to create more general functions and avoid code repetition at the caller site.
+
+_NOTE: Overloads to handle curried functions with more arguments might be added later (if needed)._
 
 Example:
 
@@ -60,8 +64,6 @@ let utf8StringConstructor = stringConstructor(.utf8)
 let data = … // some string data
 let string = utf8StringConstructor(data) // optional string
 ```
-
-_Current implementations of `curry` and `flip` support exactly two arguments, but overloads to handle more might be added later (if needed)._
 
 ### Map / Filter
 
