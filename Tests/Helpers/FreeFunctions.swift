@@ -1,6 +1,6 @@
 //
 //  FreeFunctions.swift
-//  OperatorsTests
+//  TestHelpers
 //
 //  Created by Mikhail Dudarev on 29.04.2023.
 //

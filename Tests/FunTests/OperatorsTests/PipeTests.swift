@@ -1,11 +1,11 @@
 //
 //  PipeTests.swift
-//  OperatorsTests
+//  FunTests
 //
 //  Created by Mikhail Dudarev on 29.04.2023.
 //
 
-import Operators
+import Fun
 @testable import TestHelpers
 import XCTest
 

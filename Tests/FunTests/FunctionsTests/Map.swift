@@ -1,11 +1,11 @@
 //
 //  Map.swift
-//  FunctionsTests
+//  FunTests
 //
 //  Created by Mikhail Dudarev on 01.05.2023.
 //
 
-import Functions
+import Fun
 @testable import TestHelpers
 import XCTest
 

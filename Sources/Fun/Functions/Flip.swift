@@ -1,6 +1,6 @@
 //
 //  Flip.swift
-//  Functions
+//  Fun
 //
 //  Created by Mikhail Dudarev on 01.05.2023.
 //
