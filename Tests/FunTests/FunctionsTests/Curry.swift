@@ -1,11 +1,11 @@
 //
 //  Curry.swift
-//  FunctionsTests
+//  FunTests
 //
 //  Created by Mikhail Dudarev on 29.04.2023.
 //
 
-import Functions
+import Fun
 @testable import TestHelpers
 import XCTest
 

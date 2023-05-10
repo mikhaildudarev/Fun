@@ -6,27 +6,11 @@ import PackageDescription
 let package = Package(
     name: "Fun",
     products: [
-        .library(
-            name: "Fun",
-            targets: [
-                "Operators",
-                "Functions"
-            ]
-        )
+        .library(name: "Fun", targets: ["Fun"])
     ],
     targets: [
-        .target(name: "Operators"),
-        .target(name: "Functions"),
+        .target(name: "Fun"),
         .target(name: "TestHelpers", path: "Tests/Helpers"),
-        .testTarget(name: "OperatorsTests", dependencies: ["Operators", "TestHelpers"]),
-        .testTarget(name: "FunctionsTests", dependencies: ["Functions", "TestHelpers"]),
-        .testTarget(
-            name: "IntegrationTests",
-            dependencies: [
-                "Operators",
-                "Functions",
-                "TestHelpers"
-            ]
-        )
+        .testTarget(name: "FunTests", dependencies: ["Fun", "TestHelpers"])
     ]
 )

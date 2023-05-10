@@ -1,6 +1,6 @@
 //
 //  SingleTypeComposition.swift
-//  Operators
+//  Fun
 //
 //  Created by Mikhail Dudarev on 30.04.2023.
 //

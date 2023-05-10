@@ -1,16 +1,15 @@
 //
-//  IntegrationTests.swift
-//  IntegrationTests
+//  FunTests.swift
+//  FunTests
 //
 //  Created by Mikhail Dudarev on 01.05.2023.
 //
 
-import Functions
-import Operators
+import Fun
 @testable import TestHelpers
 import XCTest
 
-final class IntegrationTests: XCTestCase {
+final class FunTests: XCTestCase {
     func test() throws {
         XCTAssertEqual(2 |> increment >>> square >>> String.init, "9")
         XCTAssertEqual([1, 2, 3, 4] |> filter(isEven) >>> map(increment >>> square), [9, 25])

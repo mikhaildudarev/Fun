@@ -1,6 +1,6 @@
 //
 //  Pipe.swift
-//  Operators
+//  Fun
 //
 //  Created by Mikhail Dudarev on 29.04.2023.
 //
